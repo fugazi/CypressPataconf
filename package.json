@@ -1,0 +1,27 @@
+{
+  "name": "cypresspataconf",
+  "version": "1.0.0",
+  "description": "Moving from Manual to Automated Tests with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run spec",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fugazi/CypressPataconf.git"
+  },
+  "keywords": [
+    "cypress",
+    "pataconf"
+  ],
+  "author": "Douglas Urrea Ocampo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fugazi/CypressPataconf/issues"
+  },
+  "homepage": "https://github.com/fugazi/CypressPataconf#readme",
+  "dependencies": {
+    "cypress": "^3.4.1"
+  }
+}

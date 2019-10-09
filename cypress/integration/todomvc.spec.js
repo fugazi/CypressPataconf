@@ -3,7 +3,6 @@ describe('Caso de Prueba: Crear tareas en la TODO App para validar su funcionami
     it('Validar el acceso a la TODO App', () => {
         cy.visit('http://todomvc-app-for-testing.surge.sh')
         expect(true).to.equal(true)
-        cy.pause()
     });
 
     it('Agregar nuevas tareas en la TODO App', () => {

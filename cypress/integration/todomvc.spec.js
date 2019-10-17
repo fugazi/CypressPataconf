@@ -5,11 +5,19 @@ describe('Caso de Prueba: Crear tareas en la TODO App para validar su funcionami
         expect(true).to.equal(true)
     });
 
+    beforeEach(() => {
+        cy.fixture('example.json').as('userData')        
+    });
+
     it('Agregar nuevas tareas en la TODO App', () => {
+        cy.get('@userData').then((userData) => {
+            cy.get('.new-todo').type('userData.name').type('{enter}')  
+        });
         cy.get('.new-todo').type('Escribir ensayo para la universidad').type('{enter}')
         cy.get('.new-todo').type('Comprar comida para el gato').type('{enter}')
         cy.get('.new-todo').type('Realizar slides para la conferencia').type('{enter}')
         cy.get('.new-todo').type('Llamar al odontólogo para programar cita').type('{enter}')
+
     });
 
     it('Marcar tareas como completadas en la TODO App', () => {

@@ -8,7 +8,12 @@ describe('Caso de Prueba: Crear tareas en la TODO App para validar su funcionami
     });
 
     beforeEach(() => {
-        cy.fixture('example.json').as('userData')        
+        cy.fixture('example.json').as('userData')
+        cy.eyesOpen({
+            appName: 'Hello World!',
+            testName: 'My first JavaScript test!',
+            browser: { width: 800, height: 600 },
+          });        
     });
 
     it('Agregar nuevas tareas en la TODO App', () => {

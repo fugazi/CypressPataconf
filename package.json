@@ -26,6 +26,7 @@
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
+    "@applitools/eyes-cypress": "^3.9.8",
     "cypress-skip-and-only-ui": "^1.2.4",
     "mocha": "^6.2.1"
   }

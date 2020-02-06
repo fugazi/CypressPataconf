@@ -1,4 +1,5 @@
 ///<reference types="cypress" />
+require('dotenv').config();
 
 describe('Caso de Prueba: Crear tareas en la TODO App para validar su funcionamiento', () => {
 
@@ -10,8 +11,8 @@ describe('Caso de Prueba: Crear tareas en la TODO App para validar su funcionami
     beforeEach(() => {
         cy.fixture('example.json').as('userData')
         cy.eyesOpen({
-            appName: 'Hello World!',
-            testName: 'My first JavaScript test!',
+            appName: 'todoMVC',
+            testName: 'Practicando con Applitools Eyes',
             browser: { width: 800, height: 600 },
           });        
     });
@@ -24,6 +25,9 @@ describe('Caso de Prueba: Crear tareas en la TODO App para validar su funcionami
         cy.get('.new-todo').type('Comprar comida para el gato').type('{enter}')
         cy.get('.new-todo').type('Realizar slides para la conferencia').type('{enter}')
         cy.get('.new-todo').type('Llamar al odontólogo para programar cita').type('{enter}')
+
+        // Vamos a practicar con Applitools Eyes
+        cy.eyesCheckWindow ();
 
     });
 
@@ -45,5 +49,8 @@ describe('Caso de Prueba: Crear tareas en la TODO App para validar su funcionami
         cy.get('.completed > .view > label').should('have.css', 'text-decoration-line', 'line-through')
         
     });
-    
+
+    afterEach(() => {
+        cy.eyesClose();
+    });
 });

@@ -1,3 +1,5 @@
+///<reference types="cypress" />
+
 describe('Caso de Prueba: Crear tareas en la TODO App para validar su funcionamiento', () => {
 
     it('Validar el acceso a la TODO App', () => {
@@ -10,7 +12,7 @@ describe('Caso de Prueba: Crear tareas en la TODO App para validar su funcionami
     });
 
     it('Agregar nuevas tareas en la TODO App', () => {
-        cy.get('@userData').then((userData) => {
+        cy.get('@userData').then((_userData) => {
             cy.get('.new-todo').type('userData.name').type('{enter}')  
         });
         cy.get('.new-todo').type('Escribir ensayo para la universidad').type('{enter}')
@@ -36,6 +38,7 @@ describe('Caso de Prueba: Crear tareas en la TODO App para validar su funcionami
         cy.get(':nth-child(2) > .view > label').should('have.text', 'Realizar slides para la conferencia')
         cy.get(':nth-child(2) > .view > label').should('not.be.checked')
         cy.get('.completed > .view > label').should('have.css', 'text-decoration-line', 'line-through')
+        
     });
     
 });

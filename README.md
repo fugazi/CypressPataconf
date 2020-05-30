@@ -25,8 +25,11 @@ Puedes seguir todo el tutorial paso a paso aquí: https://douglasfugazi.gitbook.
 o tambien se puede usar el comando: `npx cypress open`  
 
 **Opcional:** Si queremos abrir Cypress en un segundo nuevo proyecto. No es necesario instalar de nuevo el paquete de Cypress en la computadora. Simplemente debo ejecutar los siguientes comandos:
+
 `npm init`
+
 `npm i cypress`  
+
 `npx cypress open`
 
 ## 😉 Acerca del tutorial

@@ -15,10 +15,13 @@ Puedes seguir todo el tutorial paso a paso aquí: https://douglasfugazi.gitbook.
 ## 🛠 [Instalación](https://douglasfugazi.gitbook.io/introduction-to-cypress/cypress/instalacion)
 
 1. Instalar Cypress.io
+
 `npm install cypress --save-dev`
 
 2. Una vez instalado, escribir en la terminal para abrir Cypress.io
+
 `./node_modules/.bin/cypress open`  
+
 o tambien se puede usar el comando: `npx cypress open`  
 
 **Opcional:** Si queremos abrir Cypress en un segundo nuevo proyecto. No es necesario instalar de nuevo el paquete de Cypress en la computadora. Simplemente debo ejecutar los siguientes comandos:

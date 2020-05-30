@@ -1,35 +1,45 @@
 # Introduction to Cypress at Pataconf
-Introduction to Cypress: From beginner to pro
+Introduction to Cypress: From beginner to pro (Medellín, Colombia. 2019-2020)
 
+## 👋 [Introducción](https://douglasfugazi.gitbook.io/introduction-to-cypress/)
+La automatización de pruebas funcionales plantea sus propios desafíos diferentes de las pruebas manuales. No importa si eres un tester manual, las pruebas automatizadas con [Cypress.io](https://www.cypress.io) es una excelente manera de apoyar fácilmente las **Pruebas End-to-End** en un equipo multifuncional, logrando que el equipo tenga una comprensión común de qué probar de forma eficiente y rápida sin grandes conocimientos técnicos.
 
-Prerequisitos:
-- Node.js  
-- NPM  
+## 🏠 [Homepage](https://douglasfugazi.gitbook.io/introduction-to-cypress/cypress/instalacion)
+Puedes seguir todo el tutorial paso a paso aquí: https://douglasfugazi.gitbook.io/introduction-to-cypress/
 
-1. Instalar Cypress  
-https://docs.cypress.io/guides/getting-started/installing-cypress.html#npm-install
+## ✨ Prerequisitos
+- Node.js
+- NPM
+- Editor de código
 
-2. Escribir en la terminal para abrir cypress  
-./node_modules/.bin/cypress open  
-o tambien se puede usar el comando: npx cypress open  
+## 🛠 [Instalación](https://douglasfugazi.gitbook.io/introduction-to-cypress/cypress/instalacion)
 
-3. Ingresar al package.json y agregar: **"cypress:open": "cypress open"**  
-4. Ahora ya podemos correr Cypress solamente ejecutando en la terminal: **npm run cypress:open**
+1. Instalar Cypress.io
+`npm install cypress --save-dev`
 
-5. Para ejecutar Cypress CLI donde se pueda grabar videos y screenshots agregamos en el package.json la linea: **"test": "cypress run spec"**  
-Ahora para correr Cypress sin levantar el Runner y grabar videos e imagenes lo corremos en la terminal para trabajar con Cypress CLI: **npm test**
+2. Una vez instalado, escribir en la terminal para abrir Cypress.io
+`./node_modules/.bin/cypress open`  
+o tambien se puede usar el comando: `npx cypress open`  
 
-6. Opcional: Si queremos abrir Cypress en un segundo nuevo proyecto. No es necesario instalar de nuevo el paquete de Cypress en la computadora. Simplemente debo ejecutar los siguientes comandos:
-* npm init  
-* npm i cypress  
-* npx cypress open  
-Ingresar al package.json y agregar en "scripts" el comando: **"cypress:open": "cypress open"**
-Ahora ya podemos correr Cypress solamente ejecutando en la terminal: **npm run cypress:open**
+**Opcional:** Si queremos abrir Cypress en un segundo nuevo proyecto. No es necesario instalar de nuevo el paquete de Cypress en la computadora. Simplemente debo ejecutar los siguientes comandos:
+`npm init`
+`npm i cypress`  
+`npx cypress open`
 
-Paginas web para practicar automatización  
+## 😉 Acerca del tutorial
+Este tutorial cubre lo básico de **Cypres.io** con lo siguiente:
+* Información sobre el framework End-to-End
+* Pasos para escribir el primer test
+* Pasos para ejecutar el primer test
+* Configuración y ejecución de reportes con Mochawesome
+* Comandos avanzados de Cypress
+
+## 🤝 Practiquemos!
+Paginas web para practicar automatización
 http://automationpractice.com  
 https://www.phptravels.net  
 
+- - -
 -- Cypress con Cucumber BDD
 1. Dentro de la carpeta "integration" se agregan el "feature"  
 2. Dentro de la carpeta "support" se agregan los "steps_definitions"  

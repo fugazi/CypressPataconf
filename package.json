@@ -28,6 +28,6 @@
     "@applitools/eyes-cypress": "^3.11.1",
     "cypress": "^4.7.0",
     "cypress-skip-and-only-ui": "^1.2.6",
-    "mocha": "^6.2.3"
+    "mocha": "^10.2.0"
   }
 }

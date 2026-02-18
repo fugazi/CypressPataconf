@@ -22,12 +22,12 @@
   },
   "homepage": "https://github.com/fugazi/CypressPataconf#readme",
   "dependencies": {
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.3.1"
   },
   "devDependencies": {
-    "@applitools/eyes-cypress": "^3.57.0",
-    "cypress": "^15.7.1",
+    "@applitools/eyes-cypress": "^3.58.3",
+    "cypress": "^15.10.0",
     "cypress-skip-and-only-ui": "^1.2.19",
-    "mocha": "^11.7.5"
+    "mocha": "^11.3.0"
   }
 }
